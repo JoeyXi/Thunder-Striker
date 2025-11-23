@@ -2,29 +2,33 @@
 export const GAME_WIDTH = 600;
 export const GAME_HEIGHT = 800;
 
-export const PLAYER_SPEED = 0; // Handled by mouse/touch direct mapping usually, or smoothed
-export const PLAYER_SIZE = 64; // Slightly larger to show off detail
-export const PLAYER_HITBOX = 16;
+export const PLAYER_SPEED = 0; // Handled by mouse/touch
+export const PLAYER_SIZE = 64; 
+export const PLAYER_HITBOX = 12; // Smaller hitbox for "bullet dodging"
 
-export const BULLET_SPEED_PLAYER = 16;
-export const BULLET_SPEED_ENEMY = 6;
-export const FIRE_RATE = 6; // Faster fire rate for that arcade feel
+export const BULLET_SPEED_PLAYER = 20;
+export const BULLET_SPEED_ENEMY = 7;
+export const FIRE_RATE = 5; 
 
-export const ENEMY_SPAWN_RATE = 50; // Frames between spawns
+export const ENEMY_SPAWN_RATE = 45; 
 
-// SVG Colors mimicking Raiden aesthetic
+// Authentic Raiden Colors
 export const COLORS = {
-  raidenRed: '#dc2626',      // Main ship body
-  raidenWhite: '#e5e7eb',    // Intakes/Highlights
-  raidenBlue: '#2563eb',     // Wing tips/Cockpit tint
-  raidenGrey: '#4b5563',     // Mechanical parts
+  raidenRed: '#d00000',      // Deeper Arcade Red
+  raidenWhite: '#e0e0e0',    
+  raidenBlue: '#1a56db',     
+  raidenGrey: '#52525b',     
   
-  enemyGreen: '#3f6212',     // Classic tank/heavy plane green
-  enemySilver: '#9ca3af',    // Standard interceptor silver
-  enemyOrange: '#d97706',    // Enemy cockpits/lights
+  // Enemy Colors
+  enemyGreen: '#4a5d23',     // Military Olive
+  enemyTan: '#857a54',       // Desert Camo
+  enemySilver: '#a1a1aa',    
   
-  bulletRed: '#ef4444',      // Player vulcan
-  bulletPink: '#f472b6',     // Enemy distinct bullets
-  explosionInner: '#fef08a',
-  explosionOuter: '#b91c1c'
+  // Projectiles
+  bulletRed: '#ff2200',      // Player Vulcan
+  bulletPink: '#ff00ff',     // Classic Raiden Enemy Bullet
+  bulletOrange: '#ffaa00',   // Laser color
+  
+  explosionInner: '#ffff00',
+  explosionOuter: '#ff4400'
 };
